@@ -5,10 +5,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
 }
+body {
+    background-image: url('back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 138, 182, 0.35);
+}
+
 
 html{
     font-size: 90%;
+}
+h1{
+    color: #ffffff;
+    font-size:45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 
 body{
@@ -18,9 +36,14 @@ body{
     align-items: center;
     background-color: rgba(154, 138, 182, 0.35);
 }
+#showSentence{
+    color: #fff;
+    font-weight:200;
+}
 
 .typing-section{
     text-align: center;
+    background-image: none;
 }
 
 #textarea{
@@ -56,4 +79,60 @@ h2{
     margin: 2rem 0;
     letter-spacing: .02rem;
     text-align: center;
+    color: white;
+    font-weight: 200;
+
+
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #textarea {
+        max-width: 90%;
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    #btn {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #showSentence,
+    #score {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #textarea {
+        max-width: 80%;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    #btn {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #showSentence,
+    #score {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  
 }
